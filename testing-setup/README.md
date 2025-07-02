@@ -10,14 +10,16 @@ A complete testing setup for React Native apps with Jest and Detox.
 - TypeScript support
 - Common test utilities
 
-## Required Dependencies
+## Installation
+
+Install the required dependencies based on your testing needs:
 
 ```bash
 # For unit/integration testing
-npm install --save-dev @testing-library/react-native @testing-library/jest-native jest-expo
+npm install --save-dev @testing-library/react-native @testing-library/jest-native jest-expo @types/jest
 
 # For E2E testing
-npm install --save-dev detox
+npm install --save-dev detox @types/detox
 ```
 
 ## Quick Start

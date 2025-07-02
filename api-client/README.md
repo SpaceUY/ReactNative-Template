@@ -11,8 +11,14 @@ A ready-to-use API client for React Native apps using Axios and TanStack Query (
 
 ## Installation
 
+Install the required dependencies:
+
 ```bash
-npm install @rn-template/api-client
+# Install TanStack Query
+npm install @tanstack/react-query
+
+# Install Axios
+npm install axios
 ```
 
 ## Quick Start
@@ -20,7 +26,7 @@ npm install @rn-template/api-client
 1. Create and configure your API client:
 
 ```typescript
-import { createApiClient, queryClient, QueryClientProvider } from '@rn-template/api-client'
+import { createApiClient, queryClient, QueryClientProvider } from './tanstack'
 
 // Create API client
 const api = createApiClient({
@@ -43,7 +49,7 @@ function App() {
 2. Use the hooks in your components:
 
 ```typescript
-import { createQueryHooks } from '@rn-template/api-client'
+import { createQueryHooks } from './tanstack/hooks'
 
 // Create hooks with your API instance
 const { useApiQuery, useApiMutation } = createQueryHooks(api)
