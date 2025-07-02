@@ -1,0 +1,79 @@
+{
+  "modules": {
+    "template": {
+      "path": "expo-template",
+      "implementations": [
+        {
+          "name": "expo",
+          "description": "React Native template with Expo and Expo Router navigation",
+          "dependencies": [
+            "expo-router",
+            "expo-linking",
+            "expo-constants",
+            "expo-status-bar"
+          ]
+        }
+      ]
+    },
+    "api-client": {
+      "path": "api-client",
+      "implementations": [
+        {
+          "name": "tanstack",
+          "description": "Ready-to-use API client with Axios and TanStack Query",
+          "dependencies": [
+            "@tanstack/react-query",
+            "axios"
+          ]
+        }
+      ]
+    },
+    "state-management": {
+      "path": "state-management",
+      "implementations": [
+        {
+          "name": "zustand",
+          "description": "Lightweight state management with Zustand",
+          "dependencies": [
+            "zustand"
+          ]
+        }
+      ]
+    },
+    "date-utils": {
+      "path": "date-utils",
+      "implementations": [
+        {
+          "name": "date-fns",
+          "description": "Date utilities powered by date-fns",
+          "dependencies": [
+            "date-fns"
+          ]
+        }
+      ]
+    },
+    "testing-setup": {
+      "path": "testing-setup",
+      "implementations": [
+        {
+          "name": "jest",
+          "description": "Unit and integration testing with Jest and React Testing Library",
+          "dependencies": [
+            "@testing-library/react-native",
+            "@testing-library/jest-native",
+            "jest-expo",
+            "@jest/types"
+          ]
+        },
+        {
+          "name": "detox",
+          "description": "E2E testing with Detox",
+          "dependencies": [
+            "detox",
+            "@types/detox"
+          ]
+        }
+      ]
+    }
+  }
+}
