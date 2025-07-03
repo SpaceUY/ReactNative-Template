@@ -1,10 +1,10 @@
 {
   "modules": {
     "template": {
-      "path": "expo-template",
+      "path": "template",
       "implementations": [
         {
-          "name": "expo",
+          "name": "expo-template",
           "description": "React Native template with Expo and Expo Router navigation",
           "dependencies": [
             "expo-router",
